@@ -19,10 +19,11 @@ driver = webdriver.Firefox()
 driver.get("http://uitestingplayground.com/classattr")
 
 for _ in range(3):
-    blue_button = driver.find_element(
+    blue_button_f = driver.find_element(
         "xpath", "//button[contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]")
-    blue_button.click()
+    blue_button_f.click()
     sleep(1)
 
     driver.switch_to.alert.accept()
     sleep(1)
+

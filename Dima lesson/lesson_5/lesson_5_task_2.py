@@ -9,12 +9,14 @@ firefox.get("http://uitestingplayground.com/dynamicid")
 
 for _ in range(3):
 
-    blue_button = chrome.find_element(
+    blue_button_c = chrome.find_element(
         "xpath", '//button[text()="Button with Dynamic ID"]').click()
-    blue_button = firefox.find_element(
+    blue_button_f = firefox.find_element(
         "xpath", '//button[text()="Button with Dynamic ID"]').click()
 
 sleep(3)
+
+
 
 
 
